@@ -1,0 +1,11 @@
+#当将此文件命名为application.yml时，可能不会生效！
+spring:
+  application:
+    name: consumer-feign
+  profiles:
+    active: dev
+  cloud:
+    config:
+      uri: http://localhost:8888
+      label: master
+      name: consumer-feign
